@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umbrella - ID card</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Titillium+Web|Kaushan+Script|Monda&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style/style-index.css" />
+    <link href="./src/img/icon.png" rel="icon" />
+  </head>
+  <body>
+    <div id="id-card">
+      <div class="id-card material-ui-shadow">
+        <!-- Mugshot -->
+        <div class="id-card__mugshot">
+          <img
+            src="http://www.travelcontinuously.com/wp-content/uploads/2018/04/empty-avatar.png"
+            id="id-card-mugshot"
+            alt="Mugshot"
+          />
+        </div>
+        <!-- Foundation Logo -->
+        <div class="id-card__logo logo">
+          <span class="logo__big">UMBRELLA</span>
+          <span class="logo__small">corporation</span>
+        </div>
+        <!-- Subject ID -->
+        <div class="id-card__subject-id">ID: 123456</div>
+        <!-- Experiment Banner -->
+        <div class="id-card__banner">
+          <span class="id-card__banner-text">EXPERIMENT SCP-1892</span>
+        </div>
+        <!-- Details -->
+        <div class="id-card__details">
+          <div class="id-card__detail">
+            <span class="id-card__detail-label">Name</span>
+            <span class="id-card__detail-value" id="id-card-name"
+              >kakonoomoide</span
+            >
+          </div>
+          <div class="id-card__detail">
+            <span class="id-card__detail-label">Date of Birth</span>
+            <span class="id-card__detail-value" id="id-card-date-of-birth"
+              >xxxx/xx/xx</span
+            >
+          </div>
+          <div class="id-card__detail">
+            <span class="id-card__detail-label">Release Date</span>
+            <span class="id-card__detail-value">2584/06/06</span>
+          </div>
+        </div>
+        <!-- Short Details -->
+        <div class="id-card__details id-card__details--short">
+          <div class="id-card__detail">
+            <span class="id-card__detail-label">Gender</span>
+            <span class="id-card__detail-value" id="id-card-gender">?</span>
+          </div>
+          <div class="id-card__detail">
+            <span class="id-card__detail-label">Height</span>
+            <span class="id-card__detail-value" id="id-card-height">?</span>
+          </div>
+          <div class="id-card__detail">
+            <span class="id-card__detail-label">class</span>
+            <span class="id-card__detail-value" id="id-card-Class">?</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="id-form">
+      <div class="id-form">
+        <div class="id-form__label">Name</div>
+        <div class="id-form__input">
+          <input type="text" id="name" placeholder="Name" />
+        </div>
+        <div class="id-form__label">Tanggal Lahir</div>
+        <div class="id-form__input">
+          <input type="date" id="date-of-birth" placeholder="Tanggal Lahir" />
+        </div>
+        <div class="id-form__label">Gender</div>
+        <div class="id-form__input">
+          <select id="gender">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="AH">Attacking Helicopter</option>
+            <option value="C">Croissant</option>
+            <option value="CL">Curcuma longa</option>
+          </select>
+        </div>
+        <div class="id-form__label">Height</div>
+        <div class="id-form__input">
+          <input type="text" id="height" placeholder="Height" />
+        </div>
+        <div class="id-form__label">Class</div>
+        <div class="id-form__input">
+          <input type="radio" id="class-d" name="class" value="D" />
+          <label for="class-d">D</label>
+          <input type="radio" id="class-c" name="class" value="C" />
+          <label for="class-c">C</label>
+          <input type="radio" id="class-b" name="class" value="B" />
+          <label for="class-b">B</label>
+          <input type="radio" id="class-a" name="class" value="A" />
+          <label for="class-a">A</label>
+          <input type="radio" id="class-a-plus" name="class" value="A+" />
+          <label for="class-a-plus">A+</label>
+          <input type="radio" id="class-s" name="class" value="S" />
+          <label for="class-s">S</label>
+          <input type="radio" id="class-s-plus" name="class" value="S+" />
+          <label for="class-s-plus">S+</label>
+        </div>
+        <div class="id-form__label">Mugshot</div>
+        <div class="id-form__input">
+          <input type="file" id="mugshot" accept="image/*" />
+          <button id="download-button">Download ID Card</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.18.0/js/md5.min.js"></script>
+    <script src="./src/script/script-index.js"></script>
+  </body>
+</html>

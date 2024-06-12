@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+
+body {
+  background: #e2e1e0 url("../img/bg.png") no-repeat center center fixed; /* Gunakan URL lengkap atau path relatif yang benar */
+  background-size: cover; /* Atur ukuran gambar agar sesuai */
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 50em;
+  line-height: 1.5em;
+  font-family: "PT Sans", sans-serif;
+  word-wrap: break-word;
+}
+
+#id-card {
+  display: inline-block;
+  margin-right: 2em;
+}
+
+.id-card {
+  width: 336px;
+  height: 192px;
+  background: #ffffff;
+  padding: 10px;
+  position: relative;
+}
+
+.id-card__mugshot {
+  position: absolute;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+  border-left: 4px solid red;
+  background: #ffffff;
+}
+
+.id-card__mugshot img {
+  width: 100px;
+  height: 100px;
+}
+
+.id-card__logo {
+  width: 200px;
+}
+
+.id-card__subject-id {
+  position: absolute;
+  top: 54px;
+  left: 130px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14pt;
+  transform: rotate(-4deg);
+}
+
+.id-card__banner {
+  height: 12pt;
+  background: red;
+  margin-top: 10px;
+  margin-left: -10px;
+  padding-left: 12px;
+}
+
+.id-card__banner-text {
+  color: #ffffff;
+  font-size: 8pt;
+  letter-spacing: 2px;
+  line-height: 0;
+  position: relative;
+  top: -6px;
+}
+
+.id-card__details {
+  padding-top: 20px;
+  font-size: 6pt;
+  line-height: 1.5;
+  text-transform: uppercase;
+  width: 60%;
+  display: inline-block;
+}
+
+.id-card__details--short {
+  float: right;
+  margin-left: 30px;
+  width: 100px;
+}
+
+.id-card__detail {
+  height: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.id-card__detail + .id-card__detail {
+  border-top: 1px solid #eeeeee;
+}
+
+.id-card__detail-label {
+  color: #333333;
+  font-weight: bold;
+}
+
+.id-card__detail-label:after {
+  content: " • ";
+  font-weight: normal;
+}
+
+.logo__big {
+  font-size: 24pt;
+  font-weight: bold;
+  line-height: 1.3;
+  letter-spacing: 4px;
+}
+
+.logo__small {
+  font-size: 10pt;
+  letter-spacing: 4px;
+  position: relative;
+  top: -10px;
+  left: 2px;
+}
+
+#id-form {
+  margin-top: 20px;
+}
+
+.id-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Ubah nilai alpha menjadi kurang dari 1 */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ubah nilai alpha menjadi kurang dari 1 */
+  }
+
+.id-form__label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .id-form__input {
+    margin-bottom: 10px;
+  }
+  
+  .id-form__input input[type="text"],
+  .id-form__input input[type="date"], /* Mengubah input type menjadi date */
+  .id-form__input select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .id-form__input input[type="file"] {
+    width: auto;
+  }
+  
+  .id-form__input input[type="file"]::-webkit-file-upload-button {
+    padding: 8px 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .id-form__input input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #45a049;
+  }
+
+  /* CSS untuk radio button */
+.id-form__input input[type="radio"] {
+    display: none; /* Sembunyikan radio button asli */
+  }
+  
+  /* CSS untuk label radio button */
+  .id-form__input label {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* CSS untuk label radio button yang dipilih */
+  .id-form__input input[type="radio"]:checked + label {
+    background-color: #007bff; /* Warna latar belakang saat dipilih */
+    color: #ffffff; /* Warna teks saat dipilih */
+  }
+
+  #download-button {
+    background-color: #4caf50; 
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    margin-left: 200px;
+  }
+  
+  #download-button:hover {
+    background-color: #45a049; 
+  }
+  
+  #download-button:active {
+    background-color: #3e8e41; 
+  }
+.material-ui-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.material-ui-shadow:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
